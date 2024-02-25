@@ -59,9 +59,9 @@ function Upload() {
         <img src={image ? image : icoupload} alt="" className={`${image ? 'dark:invert-0' : 'dark:invert'}`} />
           <input type="file" id="upload" className='hidden' accept='image/*' required />
         </div>
-        <input type="text" name="" id="" value={title} placeholder='enter title' className='w-8/12 shadow-lg h-8' onChange={(e) => setTitle(e.target.value)} required />
-        <input type="text" name="" id="" value={description} placeholder='enter description' className='w-8/12 shadow-lg h-8' onChange={(e) => setDescription(e.target.value)} required />
-        <button type="submit" className='bg-gray-900 py-1 rounded-lg text-white mt-5 dark:bg-white dark:text-gray-900  px-3'>Submit</button>
+        <input type="text"  name="" id="" value={title} placeholder='enter title' className='w-8/12 shadow-lg h-8 p-5 text-lg' onChange={(e) => setTitle(e.target.value)} required />
+        <textarea   name="" id="" rows="5" cols="50" value={description} placeholder='enter description' className='w-8/12 shadow-lg p-5 text-lg' onChange={(e) => setDescription(e.target.value)} required > </textarea>
+        <button type="submit" className='bg-gray-900 py-1 rounded-lg text-lg text-white mt-5 dark:bg-white dark:text-gray-900  px-4 mb-9'>Submit</button>
       </form>
     </div>
   )

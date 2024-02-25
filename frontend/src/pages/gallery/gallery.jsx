@@ -48,8 +48,8 @@ function Gallery() {
         useSensor(TouchSensor),
 
     )
-    if (loading) return <h1>Loading...</h1>
-    else if (error) return <h1>Error</h1>
+    if (loading) return <h1 className='md:basis-3/4 basis-8/12'>Loading...</h1>
+    else if (error) return <h1 className='md:basis-3/4 basis-8/12'>Error</h1>
     else {
         return (
             <div className=' overflow-y-scroll md:basis-3/4 basis-8/12 h-full w-full'>
