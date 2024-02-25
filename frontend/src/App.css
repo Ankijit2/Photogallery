@@ -40,3 +40,13 @@
 .read-the-docs {
   color: #888;
 }
+
+#sidemenu{
+  width: 300px;
+  left: -300px;
+  transition: all 0.8s ease-in-out;
+}
+
+#sidemenu.openmenu{
+  left: 0;
+}
