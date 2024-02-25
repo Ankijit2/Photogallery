@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import ThemeBtn from "../themebtn/ThemeBtn"
 import { NavLink } from 'react-router-dom'
 import closemenu from '../../assets/menuclose.svg'
@@ -7,7 +8,7 @@ function Sidemenu( {isOpen,toggleMenu} ) {
 	return (
 
 		<div id="sidemenu" className={`${isOpen ? 'openmenu' : 'closemenu'} flex flex-col items-center md:basis-1/4 sm:basis-2/4 sm:static fixed left-0  h-full overflow-hidden text-black  dark:text-gray-400 bg-white dark:bg-gray-900 rounded border-r-gray-700 border-r-2 p-4 z-20`}>
-			<img src={closemenu} onClick={toggleMenu} className="absolute top-4 left-4 cursor-pointer" />
+			<img src={closemenu} onClick={toggleMenu} className="absolute top-4 left-4 cursor-pointer sm:hidden block dark:invert" />
 			<ThemeBtn />
 			<NavLink className="flex items-center w-full px-3 mt-3" >
 				<svg className="w-8 h-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">

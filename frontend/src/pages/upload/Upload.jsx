@@ -53,7 +53,7 @@ function Upload() {
   return (
     <div className='basis-3/4'>
       <form className='flex flex-col gap-10 justify-center items-center' onSubmit={handleUpload}>
-        <label htmlFor="upload" className="upload-label" >Upload File</label>
+        <label htmlFor="upload" className="upload-label text-2xl dark:text-white" >Upload File</label>
 
         <div className='aspect-video w-8/12 grid place-items-center shadow-lg' onClick={() => document.getElementById('upload').click()} onChange={handleFileChange}>
           {image ? <img src={image} alt="" className='h-full dark:invert-[0.86]' /> : <img src={icoupload} alt="" className='h-full' />}
@@ -61,7 +61,7 @@ function Upload() {
           <input type="file" id="upload" className='hidden' accept='image/*' required /></div>
         <input type="text" name="" id="" value={title} placeholder='enter title' className='w-8/12 shadow-lg h-8' onChange={(e) => setTitle(e.target.value)} required />
         <input type="text" name="" id="" value={description} placeholder='enter description' className='w-8/12 shadow-lg h-8' onChange={(e) => setDescription(e.target.value)} required />
-        <button type="submit">Submit</button>
+        <button type="submit" className='bg-gray-900 py-1 rounded-lg text-white mt-5 dark:bg-white dark:text-gray-900  px-3'>Submit</button>
       </form>
     </div>
   )

@@ -1,8 +1,10 @@
-import PropTypes from 'prop-types';
-import { useEffect, useState } from 'react';
+/* eslint-disable react/prop-types */
+
+
 import { useSortable } from "@dnd-kit/sortable"
 import { CSS } from "@dnd-kit/utilities"
 
+// eslint-disable-next-line react/prop-types
 function Photos({ task, id }) {
 
 
@@ -34,16 +36,6 @@ function Photos({ task, id }) {
     </div>
   )
 }
-
-Photos.propTypes = {
-  task: PropTypes.shape({
-    id: PropTypes.number.isRequired,
-    url: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired
-  }).isRequired,
-  id: PropTypes.string.isRequired
-};
 
 
 export default Photos

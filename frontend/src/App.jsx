@@ -42,7 +42,7 @@ function App() {
       <ThemeProvider value={{ themeMode, lightTheme, darkTheme }}>
         {/* <GalleryContext.Provider value={{ data }}> */}
           <div className='flex items-center justify-center w-screen dark:bg-gray-900 h-screen overflow-auto'>
-            <img src={menuopen} alt="" className='absolute top-4 left-4 cursor-pointer' onClick={toggleMenu} aria-hidden='true'/>
+            <img src={menuopen} alt="" className='absolute top-4 left-4 cursor-pointer sm:hidden block dark:invert' onClick={toggleMenu} aria-hidden='true'/>
             <Sidemenu isOpen={isOpen} toggleMenu={toggleMenu} />
 
             <Outlet/>

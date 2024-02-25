@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from 'react';
+import {  useEffect, useState } from 'react';
 import React from 'react'
 import Photos from '../../components/photos/Photos';
 import useGallerydata from '../../hooks/useGallerydata';
